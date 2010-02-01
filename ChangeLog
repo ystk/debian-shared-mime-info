@@ -1,0 +1,522 @@
+commit 08561171f346a1535f224f0ef0c82d9b80e280f8
+Author: Florent Viard <fviard@lacie.com>
+Date:   Mon Feb 1 17:26:46 2010 +0000
+
+    And another fix when fd.o.xml already exists in srcdir
+    
+    http://bugs.freedesktop.org/show_bug.cgi?id=26273
+
+ Makefile.am |    4 ++++
+ 1 files changed, 4 insertions(+), 0 deletions(-)
+
+commit 706dd4ea26ae89ed99c35b5d31310725c9cb865a
+Author: Daniel Leidert <daniel.leidert.spam@gmx.net>
+Date:   Mon Feb 1 13:39:09 2010 +0000
+
+    Make D sources a sub-class of C sources
+    
+    http://bugs.freedesktop.org/show_bug.cgi?id=13681
+
+ freedesktop.org.xml.in |    2 +-
+ tests/list             |    2 +
+ tests/test.d           |   95 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 98 insertions(+), 1 deletions(-)
+
+commit 3f1155506f763604cb16824adfd98bd6b2d2dfb9
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Feb 1 13:31:25 2010 +0000
+
+    Fix test list
+
+ tests/list |   10 +++++-----
+ 1 files changed, 5 insertions(+), 5 deletions(-)
+
+commit 2b30c4be04480e18fe8d06ad36d813239410a368
+Author: RALOVICH, Kristóf <tade60@freemail.hu>
+Date:   Sat Jan 30 18:44:48 2010 -0500
+
+    Add OpenDocument Flat XML test cases.
+    
+    http://bugs.freedesktop.org/show_bug.cgi?id=26340
+
+ tests/list          |    5 +
+ tests/ooo-test.fodg |  450 +++++++++++++++++++
+ tests/ooo-test.fodp | 1207 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ tests/ooo-test.fods |  292 +++++++++++++
+ tests/ooo-test.fodt |  360 +++++++++++++++
+ 5 files changed, 2314 insertions(+), 0 deletions(-)
+
+commit 07812aeab649468e6601cf9be5ad7dd86c28b81c
+Author: RALOVICH, Kristóf <tade60@freemail.hu>
+Date:   Sat Jan 30 18:17:28 2010 -0500
+
+    Enlist OpenDocument Flat XML file formats
+    
+    http://bugs.freedesktop.org/show_bug.cgi?id=26340
+
+ freedesktop.org.xml.in |   32 ++++++++++++++++++++++++++++++++
+ 1 files changed, 32 insertions(+), 0 deletions(-)
+
+commit b20b2b1bc58886dd52439cdb72a5753506a636a9
+Author: RALOVICH, Kristóf <tade60@freemail.hu>
+Date:   Sat Jan 30 17:07:31 2010 -0500
+
+    Add OpenDocument test cases.
+    
+    http://bugs.freedesktop.org/show_bug.cgi?id=26336
+
+ tests/list         |    5 +++++
+ tests/ooo-test.odg |  Bin 0 -> 8746 bytes
+ tests/ooo-test.odp |  Bin 0 -> 11334 bytes
+ tests/ooo-test.ods |  Bin 0 -> 7522 bytes
+ tests/ooo-test.odt |  Bin 0 -> 8372 bytes
+ 5 files changed, 5 insertions(+), 0 deletions(-)
+
+commit 787c97105ce3673c2e37d762955c35c24586dd28
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   Thu Jan 28 21:34:34 2010 +0000
+
+    l10n: Updates to Polish (pl) translation
+    
+    Transmitted-via: Transifex (www.transifex.net)
+
+ po/pl.po |    5 ++---
+ 1 files changed, 2 insertions(+), 3 deletions(-)
+
+commit 50fa3f6f90f3a9256966434d8690547eb8409e12
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   Thu Jan 28 21:31:33 2010 +0000
+
+    l10n: Updates to Polish (pl) translation
+    
+    Transmitted-via: Transifex (www.transifex.net)
+
+ po/pl.po | 1095 ++++++++++++++++++++++++++++++++------------------------------
+ 1 files changed, 558 insertions(+), 537 deletions(-)
+
+commit 62ddb0f83d287531762a41dce21bd7cf442bb0e3
+Author: Ville Skyttä <ville.skytta@iki.fi>
+Date:   Fri Nov 13 22:12:51 2009 +0200
+
+    Add application/x-java-keystore and application/x-java-jce-keystore.
+    
+    http://bugs.freedesktop.org/show_bug.cgi?id=22859
+
+ freedesktop.org.xml.in |   18 ++++++++++++++++++
+ tests/list             |    2 ++
+ tests/test.jceks       |  Bin 0 -> 32 bytes
+ tests/test.jks         |  Bin 0 -> 32 bytes
+ 4 files changed, 20 insertions(+), 0 deletions(-)
+
+commit 20cefa4aa428a19212eaf8286120a1f38349326a
+Author: Ville Skyttä <ville.skytta@iki.fi>
+Date:   Fri Nov 13 22:06:05 2009 +0200
+
+    Update MathML MIME type to application/mathml+xml, add root-XML and acronym for it.
+    
+    See http://www.w3.org/TR/MathML2/chapter7.html#id.7.1.3
+    
+    http://bugs.freedesktop.org/show_bug.cgi?id=25081
+
+ freedesktop.org.xml.in |   14 +++++++++-----
+ tests/list             |    1 +
+ tests/test.mml         |    2 ++
+ 3 files changed, 12 insertions(+), 5 deletions(-)
+
+commit 412ebe4e6f6763afa23bcd6e813f2e122d1196fb
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Thu Jan 28 17:14:35 2010 +0000
+
+    Fix test suite for *.eml glob addition
+
+ tests/list |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit e665d474b44d36c1510378865bd0bbbb79fd8ac5
+Author: Olivier Tilloy <olivier@tilloy.net>
+Date:   Wed Jan 27 18:09:18 2010 +0100
+
+    Add application/vnd.openxmlformats-officedocument.presentationml.slideshow
+    
+    and sample.ppsx test file (copied sample.pptx).
+    
+    http://bugs.freedesktop.org/show_bug.cgi?id=26276
+
+ freedesktop.org.xml.in |    6 ++++++
+ tests/list             |    2 ++
+ tests/sample.ppsx      |  Bin 0 -> 47215 bytes
+ 3 files changed, 8 insertions(+), 0 deletions(-)
+
+commit b84c52dd57208fe9697912d7be82daa1c74b9d6f
+Author: Ville Skyttä <ville.skytta@iki.fi>
+Date:   Fri Nov 13 22:14:41 2009 +0200
+
+    Add *.eml glob for message/rfc822.
+    
+    http://bugs.freedesktop.org/show_bug.cgi?id=25861
+
+ freedesktop.org.xml.in |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+commit a326a5c8ff045ae75c760c04241d9432bccc2287
+Author: Ville Skyttä <ville.skytta@iki.fi>
+Date:   Fri Nov 13 22:15:58 2009 +0200
+
+    Associate *.xsl and *.xslt with application/xslt+xml instead of application/xml.
+    
+    http://bugs.freedesktop.org/show_bug.cgi?id=25860
+
+ freedesktop.org.xml.in |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 28939fdabc6fd8e8540e0e3486f9e5f567ad610c
+Author: Ville Skyttä <ville.skytta@iki.fi>
+Date:   Sat Jan 2 21:58:40 2010 +0200
+
+    Associate .cer with application/pkix-cert instead of application/x-x509-ca-cert (RFC 2585).
+    
+    http://bugs.freedesktop.org/show_bug.cgi?id=25859
+
+ freedesktop.org.xml.in |    5 ++++-
+ 1 files changed, 4 insertions(+), 1 deletions(-)
+
+commit fa8d814ff02096a5c1bf679b774cef33e0a744fb
+Author: Ville Skyttä <ville.skytta@iki.fi>
+Date:   Fri Nov 13 22:09:22 2009 +0200
+
+    Add application/pkix-crl.
+    
+    http://bugs.freedesktop.org/show_bug.cgi?id=25061
+
+ freedesktop.org.xml.in |    4 ++++
+ 1 files changed, 4 insertions(+), 0 deletions(-)
+
+commit b4c2ad132dcde0772c9473efc8cdf2071e2f19e3
+Author: Florent Viard <fviard@lacie.com>
+Date:   Thu Jan 28 16:45:03 2010 +0000
+
+    Fix error at compilation time when builddir != srcdir
+    
+    http://bugs.freedesktop.org/show_bug.cgi?id=26273
+
+ Makefile.am |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 91d5397abb9fe13c01bd15316c7a9ff9ac81d800
+Author: Petr Kovar <pknbe@volny.cz>
+Date:   Sun Jan 17 22:11:09 2010 +0000
+
+    l10n: Updates to Czech (cs) translation
+    
+    Transmitted-via: Transifex (www.transifex.net)
+
+ po/cs.po |  976 +++++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 527 insertions(+), 449 deletions(-)
+
+commit 93889dda99549cd6c3182a5da78dd3c85d1d3b49
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   Sat Dec 12 20:46:05 2009 +0000
+
+    l10n: Updates to Polish (pl) translation
+    
+    Transmitted-via: Transifex (www.transifex.net)
+
+ po/pl.po |  924 +++++++++++++++++++++++++++++++-------------------------------
+ 1 files changed, 464 insertions(+), 460 deletions(-)
+
+commit 0af859305338ad0b4a53d663acba1061587ae0d3
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Dec 4 14:22:59 2009 +0000
+
+    Add pre-git ChangeLog
+
+ ChangeLog.pre-git | 3399 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 3399 insertions(+), 0 deletions(-)
+
+commit 2cbf80fc99d152dea3cbb92eb5670f1ebb83ea22
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Dec 4 14:22:34 2009 +0000
+
+    Add support for Apple's HTTP Live Streaming playlists
+
+ freedesktop.org.xml.in   |    8 ++++++++
+ tests/list               |    2 ++
+ tests/live-streaming.m3u |    5 +++++
+ 3 files changed, 15 insertions(+), 0 deletions(-)
+
+commit 3e8a8f7f1df912b938883de1bd6cfc0f6e2e2267
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Dec 4 14:17:44 2009 +0000
+
+    Add comment for broken RSS file
+
+ tests/list |    3 ++-
+ 1 files changed, 2 insertions(+), 1 deletions(-)
+
+commit 0f3f6fe6c75f1150afe8a0f44f5e20755a862f35
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Fri Dec 4 11:51:37 2009 +0000
+
+    Add a test case for RSS feeds
+
+ tests/560051.xml | 2944 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ tests/list       |    1 +
+ 2 files changed, 2945 insertions(+), 0 deletions(-)
+
+commit 88d20caaec5354b88ec9d9a556ab48163ac3d256
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   Fri Nov 20 23:44:51 2009 +0000
+
+    l10n: Updates to Polish (pl) translation
+    
+    Transmitted-via: Transifex (www.transifex.net)
+
+ po/pl.po |  922 +++++++++++++++++++++++++++++++-------------------------------
+ 1 files changed, 463 insertions(+), 459 deletions(-)
+
+commit 8ece0d43938fbe4b426f69d457d8846009fcb963
+Author: claudep <claude@2xlibre.net>
+Date:   Tue Nov 17 09:40:26 2009 +0000
+
+    l10n: Updates to French (fr) translation
+    
+    Transmitted-via: Transifex (www.transifex.net)
+
+ po/fr.po |  937 ++++++++++++++++++++++++++++++++------------------------------
+ 1 files changed, 484 insertions(+), 453 deletions(-)
+
+commit 531f05a4040b7e87878090ed7d9f78dd78807001
+Author: Richard Hughes <richard@hughsie.com>
+Date:   Tue Nov 10 18:54:19 2009 +0000
+
+    Rename application/x-it87_2 to application/x-it87 as /2 is just a revision number
+
+ freedesktop.org.xml.in |    8 ++++----
+ tests/list             |    2 +-
+ tests/test.it87        |   17 +++++++++++++++++
+ tests/test.it872       |   17 -----------------
+ 4 files changed, 22 insertions(+), 22 deletions(-)
+
+commit e4bde384d99e430272909be9bc31438360a87b27
+Author: Richard Hughes <richard@hughsie.com>
+Date:   Tue Nov 10 17:24:31 2009 +0000
+
+    Add application/x-it87_2
+    
+    Matching values taken from the IT8.7/2 specification which is freely available.
+
+ freedesktop.org.xml.in |    9 +++++++++
+ tests/list             |    2 ++
+ tests/test.it872       |   17 +++++++++++++++++
+ 3 files changed, 28 insertions(+), 0 deletions(-)
+
+commit bf1808ba0270207094da9d097d2631b17d8fc719
+Author: Luca Ferretti <elle.uca@libero.it>
+Date:   Fri Nov 6 20:05:11 2009 +0000
+
+    l10n: Updates to Italian (it) translation
+    
+    Transmitted-via: Transifex (www.transifex.net)
+
+ po/it.po |  747 +++++++++++++++++++++++++++++++-------------------------------
+ 1 files changed, 375 insertions(+), 372 deletions(-)
+
+commit d21f78c5e8b8dd7de4f3ca24e54f53b59ee338f1
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Sat Oct 31 02:47:34 2009 +0000
+
+    Remove duplicated XUL definition
+    
+    http://bugs.freedesktop.org/show_bug.cgi?id=24826
+
+ freedesktop.org.xml.in |    8 --------
+ 1 files changed, 0 insertions(+), 8 deletions(-)
+
+commit 35adf5bcf4ccfda4a0226a9594db5f9046f92e0d
+Author: Pino Toscano <pino@kde.org>
+Date:   Wed Oct 28 14:26:02 2009 +0100
+
+    rename .cvsignore into .gitignore and update it; add .gitignore for the po/ subdir
+
+ .cvsignore    |   23 -----------------------
+ .gitignore    |   21 +++++++++++++++++++++
+ po/.gitignore |    4 ++++
+ 3 files changed, 25 insertions(+), 23 deletions(-)
+
+commit e4a4bb9c6f837ca561d071a18a383d66fcb4ad28
+Author: Richard Hughes <richard@hughsie.com>
+Date:   Sat Oct 24 17:51:07 2009 +0100
+
+    Add application/vnd.iccprofile
+    
+    with matching values taken from the ICC specification, and test
+    file.
+
+ freedesktop.org.xml.in |    8 ++++++++
+ tests/bluish.icc       |  Bin 0 -> 3942 bytes
+ tests/list             |    2 ++
+ 3 files changed, 10 insertions(+), 0 deletions(-)
+
+commit 3d1e26a9a7705586c7cd9d5764b2e0f51f01da6f
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Oct 14 13:18:12 2009 +0100
+
+    Generate changelog from git history
+
+ Makefile.am |   10 ++++++++++
+ 1 files changed, 10 insertions(+), 0 deletions(-)
+
+commit f2201ab17100546cb60e2fc1409aec00c29d1304
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Oct 14 13:15:27 2009 +0100
+
+    Rename pre-git changelog
+
+ ChangeLog | 3399 -------------------------------------------------------------
+ 1 files changed, 0 insertions(+), 3399 deletions(-)
+
+commit 50f03a46fcfa9825c121ffc0331d2f4d5723cf4d
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Oct 14 13:14:59 2009 +0100
+
+    Update HACKING file with translation/git changes
+
+ HACKING |   28 +++++++++++-----------------
+ 1 files changed, 11 insertions(+), 17 deletions(-)
+
+commit dc00493cd7d896d6207fc325574e99a5db9ed570
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Oct 13 12:33:48 2009 +0100
+
+    [mime] Add magic for FLAC files
+    
+    Provided by mitchell@kde.org
+
+ freedesktop.org.xml.in |    3 +++
+ tests/list             |    2 ++
+ tests/test.flac        |  Bin 0 -> 102400 bytes
+ 3 files changed, 5 insertions(+), 0 deletions(-)
+
+commit d76de48a8e3386ddbb8d16ed4900e250726ebe1f
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Oct 13 02:22:33 2009 +0100
+
+    [translations] Update LINGUAS
+
+ po/LINGUAS       |    1 +
+ po/POTFILES.skip |    1 +
+ 2 files changed, 2 insertions(+), 0 deletions(-)
+
+commit 31f3a414d5b5abe9897fcfcb043b66eded0f9a15
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Tue Oct 13 02:22:17 2009 +0100
+
+    [testsuite] Add a test for xml.in files
+
+ tests/list        |    2 +
+ tests/test.xml.in | 6314 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 6316 insertions(+), 0 deletions(-)
+
+commit 30349a8810143c1f808a74c96bceba87d48e8364
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Oct 12 15:20:32 2009 +0100
+
+    [spec] Fix updated date
+
+ shared-mime-info-spec.xml |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit 59b40069315764925eea77fa4f1c3e1f33189872
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Mon Oct 12 14:46:21 2009 +0100
+
+    [spec] Update version to 0.19
+
+ shared-mime-info-spec.xml |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+commit e34b434c21d534fec1e1fc7f35a6b6b1e41d0ab6
+Author: Luca Ferretti <elle.uca@libero.it>
+Date:   Sat Oct 10 17:52:18 2009 +0000
+
+    l10n: Updates to Italian (it) translation
+    
+    Transmitted-via: Transifex (www.transifex.net)
+
+ po/it.po |    6 +++---
+ 1 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 5fef99ee05856b049ba589a206583fabefc60d11
+Author: Luca Ferretti <elle.uca@libero.it>
+Date:   Fri Oct 9 17:55:50 2009 +0000
+
+    l10n: Updates to Italian (it) translation
+    
+    Transmitted-via: Transifex (www.transifex.net)
+
+ po/it.po |  913 +++++++++++++++++++++++++++++++++-----------------------------
+ 1 files changed, 491 insertions(+), 422 deletions(-)
+
+commit 810469318960435c96d6011235591e86bba40b76
+Author: zayed <zayed.alsaidi@gmail.com>
+Date:   Thu Oct 8 07:39:15 2009 +0000
+
+    l10n: updates Arabic translation.
+    
+    Transmitted-via: Transifex (www.transifex.net)
+
+ po/ar.po | 2436 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 2436 insertions(+), 0 deletions(-)
+
+commit dd59e9b5d10b22fb2fb4cba81ca6dcfed936400b
+Author: Alexander Shopov <ash@contact.bg>
+Date:   Thu Oct 8 04:08:18 2009 +0000
+
+    l10n: Updates to Bulgarian (bg) translation
+    
+    Transmitted-via: Transifex (www.transifex.net)
+
+ po/bg.po | 1230 ++++++++++++++++++++++++++++++++++----------------------------
+ 1 files changed, 685 insertions(+), 545 deletions(-)
+
+commit 0601987026f7963bbf443e3d89d38c525006c89b
+Author: zayed <zayed.alsaidi@gmail.com>
+Date:   Thu Oct 8 03:29:56 2009 +0000
+
+    l10n: Arabic translation
+    
+    Transmitted-via: Transifex (www.transifex.net)
+
+ po/ara.po | 2368 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 files changed, 2368 insertions(+), 0 deletions(-)
+
+commit 45ce7f788615b2519e6f670c8dfb36b32a363e60
+Author: claudep <claude@2xlibre.net>
+Date:   Wed Oct 7 18:55:35 2009 +0000
+
+    l10n: Updates to French (fr) translation
+    
+    Transmitted-via: Transifex (www.transifex.net)
+
+ po/fr.po |  885 ++++++++++++++++++++++++++++++++------------------------------
+ 1 files changed, 463 insertions(+), 422 deletions(-)
+
+commit db5bf81daef79c53395337d01ca0305856e64800
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:   Wed Oct 7 11:57:00 2009 +0000
+
+    l10n: Updates to Polish (pl) translation
+    
+    Transmitted-via: Transifex (www.transifex.net)
+
+ po/pl.po |  860 ++++++++++++++++++++++++++++++++------------------------------
+ 1 files changed, 442 insertions(+), 418 deletions(-)
+
+commit 04da281d2783f35d4ad1acf00b5794f85dc54cdb
+Author: Bastien Nocera <hadess@hadess.net>
+Date:   Wed Oct 7 11:59:54 2009 +0100
+
+    Fix check target
+
+ Makefile.am |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
