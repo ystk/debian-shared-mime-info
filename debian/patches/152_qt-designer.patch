@@ -1,0 +1,24 @@
+From 808a87349950ef906296584545413f200daa6db6 Mon Sep 17 00:00:00 2001
+From: Ville Skyttä <ville.skytta@iki.fi>
+Date: Fri, 02 Apr 2010 14:34:44 +0000
+Subject: Mark Qt Designer files as XML, add magic.
+
+---
+diff --git a/freedesktop.org.xml.in b/freedesktop.org.xml.in
+index 090ee88..9fd9e69 100644
+--- a/freedesktop.org.xml.in
++++ b/freedesktop.org.xml.in
+@@ -1403,6 +1403,11 @@ command to generate the output files.
+   <mime-type type="application/x-designer">
+     <_comment>Qt Designer file</_comment>
+     <generic-icon name="x-office-document"/>
++    <sub-class-of type="application/xml"/>
++    <magic>
++      <match type="string" value="&lt;ui" offset="0:256"/>
++      <match type="string" value="&lt;UI" offset="0:256"/>
++    </magic>
+     <glob pattern="*.ui"/>
+   </mime-type>
+   <mime-type type="application/x-desktop">
+--
+cgit v0.8.3-6-g21f6

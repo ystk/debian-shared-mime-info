@@ -1,0 +1,15 @@
+Index: b/freedesktop.org.xml.in
+===================================================================
+--- a/freedesktop.org.xml.in	2010-05-29 10:53:12.869787716 +0200
++++ b/freedesktop.org.xml.in	2010-05-29 10:53:13.101783952 +0200
+@@ -2496,6 +2496,10 @@
+     </magic>
+     <glob pattern="*.psw"/>
+   </mime-type>
++  <mime-type type="application/x-mps">
++    <_comment>Linear and integer program expression format</_comment>
++    <glob pattern="*.mps"/>
++  </mime-type>
+   <mime-type type="application/x-profile">
+     <_comment>profiler results</_comment>
+     <sub-class-of type="text/plain"/>

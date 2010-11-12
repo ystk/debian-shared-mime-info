@@ -1,0 +1,13 @@
+Index: b/freedesktop.org.xml.in
+===================================================================
+--- a/freedesktop.org.xml.in	2010-05-29 10:52:37.685783877 +0200
++++ b/freedesktop.org.xml.in	2010-05-29 10:53:12.645781090 +0200
+@@ -169,7 +169,7 @@
+     <acronym>PDF</acronym>
+     <expanded-acronym>Portable Document Format</expanded-acronym>
+     <generic-icon name="x-office-document"/>
+-    <magic priority="50">
++    <magic priority="60">
+       <match type="string" value="%PDF-" offset="0"/>
+     </magic>
+     <glob pattern="*.pdf"/>

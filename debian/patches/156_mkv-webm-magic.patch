@@ -1,0 +1,48 @@
+From 5e331ed2c9ce91e5560f01465822c599d11cb9e2 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Sebastian=20Dr=C3=B6ge?= <sebastian.droege@collabora.co.uk>
+Date: Sat, 29 May 2010 15:10:28 +0200
+Subject: [PATCH 3/3] Improve WebM/Matroska magic
+
+---
+ freedesktop.org.xml.in |   18 ++++++++++++++++--
+ 1 files changed, 16 insertions(+), 2 deletions(-)
+
+diff --git a/freedesktop.org.xml.in b/freedesktop.org.xml.in
+index 0d4a3f3..c175874 100644
+--- a/freedesktop.org.xml.in
++++ b/freedesktop.org.xml.in
+@@ -2195,7 +2195,14 @@ command to generate the output files.
+     <_comment>Matroska stream</_comment>
+     <generic-icon name="video-x-generic"/>
+     <magic priority="50">
+-      <match type="string" value="matroska" offset="8"/>
++      <!-- EBML ID -->
++      <match type="big32" value="0x1a45dfa3" offset="0">
++        <!-- DocumentType ID -->
++        <match type="big16" value="0x4282" offset="5:65">
++          <!-- DocumentType -->
++          <match type="string" value="matroska" offset="8:75"/>
++        </match>
++      </match>
+     </magic>
+   </mime-type>
+   <mime-type type="video/x-matroska">
+@@ -2215,7 +2222,14 @@ command to generate the output files.
+     <generic-icon name="video-x-generic"/>
+     <glob pattern="*.webm"/>
+     <magic priority="50">
+-      <match type="string" value="webm" offset="8"/>
++      <!-- EBML ID -->
++      <match type="big32" value="0x1a45dfa3" offset="0">
++        <!-- DocumentType ID -->
++        <match type="big16" value="0x4282" offset="5:65">
++          <!-- DocumentType -->
++          <match type="string" value="webm" offset="8:75"/>
++        </match>
++      </match>
+     </magic>
+   </mime-type>
+   <mime-type type="audio/webm">
+-- 
+1.7.1
+
