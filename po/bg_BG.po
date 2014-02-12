@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: shared-mime-info\n"
 "Report-Msgid-Bugs-To: http://bugzilla.freedesktop.org/\n"
 "POT-Creation-Date: 2011-09-18 03:46+0100\n"
-"PO-Revision-Date: 2011-09-18 02:49+0000\n"
-"Last-Translator: hadess <hadess@hadess.net>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2010-11-30 12:22+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Bulgarian (Bulgaria) (http://www.transifex.net/projects/p/freedesktop/team/bg_BG/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: cy\n"
-"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != 11) ? 2 : 3\n"
+"Language: bg_BG\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../freedesktop.org.xml.in.h:1
 msgid "3D Studio image"
-msgstr "Delwedd \"3D Studio\""
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:2
 msgid "3GPP multimedia file"
@@ -39,15 +39,15 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:6
 msgid "AIFC audio"
-msgstr "Sain AIFC"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:7
 msgid "AIFF audio"
-msgstr "Sain AIFF"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:8
 msgid "AIFF/Amiga/Mac audio"
-msgstr "Sain AIFF/Amiga/Mac"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:9
 msgid "AMR audio"
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:11
 msgid "ANIM animation"
-msgstr "Animeiddiad ANIM"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:12
 msgid "AR archive"
@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:14
 msgid "ARJ archive"
-msgstr "Archif ARJ"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:15
 msgid "ASF video"
@@ -87,11 +87,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:18
 msgid "AVI video"
-msgstr "Fideo AVI"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:19
 msgid "AWK script"
-msgstr "Sgript AWK"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:20
 msgid "AbiWord document"
@@ -115,7 +115,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:25
 msgid "Adobe FrameMaker font"
-msgstr "Ffont Adobe FrameMaker"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:26
 msgid "Adobe Illustrator document"
@@ -123,7 +123,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:27
 msgid "Adobe font metrics"
-msgstr "Metrigau Ffont Adobe"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:28
 msgid "Alzip archive"
@@ -167,7 +167,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:38
 msgid "Applix Words document"
-msgstr "Dogfen Applix Words"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:39
 msgid "Atom syndication feed"
@@ -175,15 +175,15 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:40
 msgid "AutoCAD image"
-msgstr "Delwedd AutoCAD"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:41
 msgid "BCPIO document"
-msgstr "Dogfen BCPIO"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:42
 msgid "BDF font"
-msgstr "Ffont BDF"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:43
 msgid "BibTeX document"
@@ -191,7 +191,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:44
 msgid "BitTorrent seed file"
-msgstr "Ffeil hadu BitTorrent"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:45
 msgid "Blender scene"
@@ -213,7 +213,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:51
 msgid "C shell script"
-msgstr "Sgript plisgyn C"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:52
 msgid "C source code"
@@ -249,7 +249,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:60
 msgid "CMU raster image"
-msgstr "Delwedd raster CMU"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:61
 msgid "CMake source code"
@@ -261,11 +261,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:63
 msgid "CPIO archive"
-msgstr "Archif CPIO"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:64
 msgid "CPIO archive (gzip-compressed)"
-msgstr "Archif CPIO (gywasgwyd drwy gzip)"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:65
 msgid "CSS stylesheet"
@@ -305,11 +305,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:74
 msgid "Computer Graphics Metafile"
-msgstr "Delwedd ffurf CGM"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:75
 msgid "Corel Draw drawing"
-msgstr "Darlun Corel Draw"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:76
 msgid "D source code"
@@ -321,7 +321,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:78
 msgid "DCL script"
-msgstr "Sgript DCL"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:79
 msgid "DER/PEM/Netscape-encoded X.509 certificate"
@@ -337,7 +337,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:82
 msgid "DOS font"
-msgstr "Ffont DOS"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:83
 msgid "DOS/Windows executable"
@@ -349,7 +349,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:85
 msgid "DSSSL document"
-msgstr "Dogfen DSSSL"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:86
 msgid "DTD file"
@@ -365,11 +365,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:89
 msgid "Debian package"
-msgstr "Pecyn Debian"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:90
 msgid "Dia diagram"
-msgstr "Diagram Dia"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:91
 msgid "Dia shape"
@@ -389,7 +389,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:95
 msgid "Dolby Digital audio"
-msgstr "Sain Dolby Digital"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:96
 msgid "Dreamcast ROM"
@@ -429,11 +429,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:105
 msgid "Emacs Lisp source code"
-msgstr "Ffynhonnell rhaglen EMACS LISP"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:106
 msgid "Enlightenment theme"
-msgstr "Thema Enlightenment"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:107
 msgid "Erlang source code"
@@ -489,7 +489,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:120
 msgid "FastTracker II audio"
-msgstr "Sain FastTracker II"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:121
 msgid "FictionBook document"
@@ -501,7 +501,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:123
 msgid "Fortran source code"
-msgstr "Ffynhonnell rhaglen FORTRAN"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:124
 msgid "Fuji RAF raw image"
@@ -509,7 +509,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:125
 msgid "G3 fax image"
-msgstr "Delwedd Ffacs G3"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:126
 msgid "GDBM database"
@@ -521,7 +521,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:128
 msgid "GIF image"
-msgstr "Delwedd GIF"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:129
 msgid "GIMP image"
@@ -529,7 +529,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:130
 msgid "GMC link"
-msgstr "Cyswllt GMC"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:131
 msgid "GNU Oleo spreadsheet"
@@ -537,7 +537,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:132
 msgid "GNU mail message"
-msgstr "Neges E-Bost GNU"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:133
 msgid "GNUnet search file"
@@ -568,7 +568,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:141
 msgid "Glade project"
-msgstr "Prosiect Glade"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:142
 msgid "GnuCash financial data"
@@ -610,7 +610,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:153
 msgid "HDF document"
-msgstr "Dogfen HDF"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:154
 msgid "HPGL file"
@@ -634,7 +634,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:159
 msgid "Haskell source code"
-msgstr "Ffynhonnell rhaglen Haskell"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:160
 msgid "ICC profile"
@@ -642,23 +642,23 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:161
 msgid "IDL document"
-msgstr "Dogfen IDL"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:162
 msgid "IEF image"
-msgstr "Delwedd IEF"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:163
 msgid "IFF image"
-msgstr "Delwedd IFF"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:164
 msgid "ILBM image"
-msgstr "Delwedd ILBM"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:165
 msgid "ISI video"
-msgstr "Fideo ISI"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:166
 msgid "IT 8.7 color calibration file"
@@ -666,7 +666,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:167
 msgid "Impulse Tracker audio"
-msgstr "Sain Impulse Tracker"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:168
 msgid "Internet shortcut"
@@ -686,7 +686,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:172
 msgid "JNG image"
-msgstr "Delwedd JNG"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:173
 msgid "JNLP file"
@@ -694,7 +694,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:174
 msgid "JPEG image"
-msgstr "Delwedd JPEG"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:175
 msgid "JPEG-2000 image"
@@ -710,7 +710,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:178
 msgid "Java byte code"
-msgstr "Côd beit Java"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:179
 msgid "Java class"
@@ -774,7 +774,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:194
 msgid "KWord document"
-msgstr "Dogfen KWord"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:195
 msgid "KWord document (encrypted)"
@@ -826,7 +826,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:207
 msgid "LHA archive"
-msgstr "Archif LHA"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:208
 msgid "LHS source code"
@@ -838,7 +838,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:210
 msgid "LIBGRX font"
-msgstr "Ffont LIBGRX"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:211
 msgid "LZMA archive"
@@ -850,11 +850,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:213
 msgid "LightWave object"
-msgstr "Gwrthrych LightWave"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:214
 msgid "LightWave scene"
-msgstr "Golygfa LightWave"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:215
 msgid "Lilypond music sheet"
@@ -862,7 +862,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:216
 msgid "Linux PSF console font"
-msgstr "Ffont Linux PSF"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:217
 msgid "Linux PSF console font (gzip-compressed)"
@@ -870,11 +870,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:218
 msgid "Lotus 1-2-3 spreadsheet"
-msgstr "Taenlen Lotus 1-2-3"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:219
 msgid "Lotus AmiPro document"
-msgstr "Dogfen Lotus AmiPro"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:220
 msgid "Lrzip archive"
@@ -902,7 +902,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:226
 msgid "MIDI audio"
-msgstr "Sain MIDI"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:227
 msgid "MNG animation"
@@ -918,7 +918,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:230
 msgid "MP3 audio"
-msgstr "Sain MP3"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:231
 msgid "MP3 audio (streamed)"
@@ -958,7 +958,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:240
 msgid "MSX ROM"
-msgstr "ROM MSX"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:241
 msgid "MXF video"
@@ -974,11 +974,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:244
 msgid "Macintosh AppleDouble-encoded file"
-msgstr "Ffeil AppleDouble-amgodedig Macintosh"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:245
 msgid "Macintosh BinHex-encoded file"
-msgstr "Ffeil BinHex-amgodwyd Macintosh"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:246
 msgid "Macintosh MacBinary file"
@@ -990,11 +990,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:248
 msgid "MagicPoint presentation"
-msgstr "Cyflwyniad MagicPoint"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:249
 msgid "Makefile"
-msgstr "Ffeil \"make\""
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:250
 msgid "Managed Object Format"
@@ -1010,7 +1010,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:253
 msgid "MathML document"
-msgstr "Dogfen MathML"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:254
 msgid "Mathematica Notebook"
@@ -1091,7 +1091,7 @@ msgstr ""
 #. Translate this to Famicom if the console was known as such in your locale
 #: ../freedesktop.org.xml.in.h:274
 msgid "NES ROM"
-msgstr "ROM NES"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:275
 msgid "NFO document"
@@ -1103,7 +1103,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:277
 msgid "Nautilus link"
-msgstr "Cyswllt Nautilus"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:278
 msgid "Network Packet Capture"
@@ -1139,7 +1139,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:286
 msgid "ODA document"
-msgstr "Dogfen ODA"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:287
 msgid "ODB database"
@@ -1267,7 +1267,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:318
 msgid "Ogg Vorbis audio"
-msgstr "Sain Ogg Vorbis"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:319
 msgid "Ogg multimedia file"
@@ -1295,7 +1295,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:325
 msgid "OpenOffice Impress presentation"
-msgstr "Cyflwyniad OpenOffice (Impress)"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:326
 msgid "OpenOffice Impress template"
@@ -1307,15 +1307,15 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:328
 msgid "OpenOffice Writer document"
-msgstr "Dogfen OpenOffice (Writer)"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:329
 msgid "OpenOffice Writer global document"
-msgstr "Dogfen eang OpenOffice (Writer)"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:330
 msgid "OpenOffice Writer template"
-msgstr "Templed OpenOffice (Writer)"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:331
 msgid "OpenOffice.org extension"
@@ -1327,7 +1327,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:333
 msgid "OpenType font"
-msgstr "Ffont OpenType"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:334
 msgid "PAK archive"
@@ -1335,7 +1335,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:335
 msgid "PBM image"
-msgstr "Delwedd PBM"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:336
 msgid "PCD image"
@@ -1343,7 +1343,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:337
 msgid "PCF font"
-msgstr "Ffont PCF"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:338
 msgid "PCL file"
@@ -1351,7 +1351,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:339
 msgid "PCM audio"
-msgstr "Sain PCM"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:340
 msgid "PCX image"
@@ -1359,7 +1359,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:341
 msgid "PDF document"
-msgstr "Dogfen PDF"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:342
 msgid "PDF document (XZ-compressed)"
@@ -1379,7 +1379,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:346
 msgid "PGM image"
-msgstr "Delwedd PGM"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:347
 msgid "PGN chess game notation"
@@ -1387,7 +1387,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:348
 msgid "PGP keys"
-msgstr "Allweddi PGP"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:349
 msgid "PGP/MIME-encrypted message header"
@@ -1395,7 +1395,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:350
 msgid "PHP script"
-msgstr "Sgript PHP"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:351
 msgid "PKCS#10 certification request"
@@ -1415,15 +1415,15 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:355
 msgid "PNG image"
-msgstr "Delwedd PNG"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:356
 msgid "PNM image"
-msgstr "Delwedd PNM"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:357
 msgid "PPM image"
-msgstr "Delwedd PPM"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:358
 msgid "PS document"
@@ -1443,7 +1443,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:362
 msgid "Palm OS database"
-msgstr "Cronfa Ddata Palm OS"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:363
 msgid "Panasonic raw image"
@@ -1471,7 +1471,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:369
 msgid "Perl script"
-msgstr "Sgript Perl"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:370
 msgid "Photoshop image"
@@ -1550,7 +1550,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:391
 msgid "Python bytecode"
-msgstr "Côd beit Python"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:392
 msgid "Python script"
@@ -1586,11 +1586,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:400
 msgid "Quicken document"
-msgstr "Dogfen Quicken"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:401
 msgid "RAR archive"
-msgstr "Archif RAR"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:402
 msgid "RDF file"
@@ -1598,7 +1598,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:403
 msgid "README document"
-msgstr "Dogfen README"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:404
 msgid "RELAX NG XML schema"
@@ -1606,11 +1606,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:405
 msgid "RGB image"
-msgstr "Delwedd RGB"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:406
 msgid "RIFF audio"
-msgstr "Sain RIFF"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:407
 msgid "RPM package"
@@ -1662,7 +1662,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:419
 msgid "S/MIME file"
-msgstr "Ffeil S/MIME"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:420
 msgid "SAMI subtitles"
@@ -1689,11 +1689,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:428
 msgid "SGI video"
-msgstr "Video SGI"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:429
 msgid "SGML document"
-msgstr "Dogfen SGML"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:430
 msgid "SIS package"
@@ -1721,7 +1721,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:436
 msgid "SQL code"
-msgstr "Côd SQL"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:437
 msgid "SQLite2 database"
@@ -1737,7 +1737,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:440
 msgid "SV4 CPIO archive"
-msgstr "Archif CPIO SV4"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:441
 msgid "SV4 CPIO archive (with CRC)"
@@ -1753,19 +1753,19 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:444
 msgid "Scheme source code"
-msgstr "Ffynhonnell Rhaglen Scheme"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:445
 msgid "Scream Tracker 3 audio"
-msgstr "Sain Scream Tracker 3"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:446
 msgid "Scream Tracker audio"
-msgstr "Sain Scream Tracker"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:447
 msgid "Scream Tracker instrument"
-msgstr "Offeryn Scream Tracker"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:448
 msgid "Sega Master System/Game Gear ROM"
@@ -1773,7 +1773,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:449
 msgid "Setext document"
-msgstr "Dogfen Setext"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:450
 msgid "Shockwave Flash file"
@@ -1814,7 +1814,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:460
 msgid "Speedo font"
-msgstr "Ffont Speedo"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:461
 msgid "Speex audio"
@@ -1822,23 +1822,23 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:462
 msgid "Stampede package"
-msgstr "Pecyn Stampede"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:463
 msgid "StarCalc spreadsheet"
-msgstr "Taenlen StarCalc"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:464
 msgid "StarChart chart"
-msgstr "Siart StarChart"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:465
 msgid "StarDraw drawing"
-msgstr "Darlun StarDraw"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:466
 msgid "StarImpress presentation"
-msgstr "Cyflwyniad StarImpress"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:467
 msgid "StarMail email"
@@ -1850,7 +1850,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:469
 msgid "StarWriter document"
-msgstr "Dogfen StarWriter"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:470
 msgid "StuffIt archive"
@@ -1870,7 +1870,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:474
 msgid "SunOS News font"
-msgstr "Ffont SunOS News"
+msgstr ""
 
 #. Translate this as Super Famicom (in Far East Asia) or Super Nintendo (in
 #. Europe) if the console was known as such in your locale
@@ -1919,7 +1919,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:489
 msgid "Tar archive"
-msgstr "Archif tar"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:490
 msgid "Tar archive (LZMA-compressed)"
@@ -1967,23 +1967,23 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:501
 msgid "TeX document"
-msgstr "Dogfen TeX "
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:502
 msgid "TeX font"
-msgstr "Ffont TeX"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:503
 msgid "TeX font metrics"
-msgstr "Metrigau Ffont TeX"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:504
 msgid "TeXInfo document"
-msgstr "Dogfen TeXInfo"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:505
 msgid "ToutDoux document"
-msgstr "Dogfen ToutDoux"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:506
 msgid "Troff ME input document"
@@ -1999,7 +1999,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:509
 msgid "Troff document"
-msgstr "Dogfen troff"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:510
 msgid "Troff document (with manpage macros)"
@@ -2023,7 +2023,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:515
 msgid "ULAW (Sun) audio"
-msgstr "Sain ULAW (Sun)"
+msgstr ""
 
 #. http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html
 #. http://bugzilla.gnome.org/show_bug.cgi?id=509823#c3
@@ -2041,7 +2041,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:521
 msgid "Usenet news message"
-msgstr "Neges newyddion Usenet"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:522
 msgid "Ustar archive"
@@ -2049,7 +2049,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:523
 msgid "V font"
-msgstr "Ffont V"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:524
 msgid "VCS/ICS calendar"
@@ -2061,11 +2061,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:526
 msgid "VOC audio"
-msgstr "Sain VOC"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:527
 msgid "VRML document"
-msgstr "Dogfen VRML"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:528
 msgid "Vala source code"
@@ -2084,15 +2084,15 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:534
 msgid "Vivo video"
-msgstr "Fideo Vivo"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:535
 msgid "WAIS source code"
-msgstr "Ffynhonnell Rhaglen WAIS"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:536
 msgid "WAV audio"
-msgstr "Sain WAV"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:537
 msgid "WBMP image"
@@ -2104,7 +2104,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:539
 msgid "WML document"
-msgstr "Dogfen WML"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:540
 msgid "WMLScript program"
@@ -2132,7 +2132,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:546
 msgid "Wavelet video"
-msgstr "Fideo Wavelet"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:547
 msgid "Web application cache manifest"
@@ -2152,7 +2152,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:551
 msgid "Windows BMP image"
-msgstr "Delwedd BMP Windows"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:552
 msgid "Windows Imaging Format Disk Image"
@@ -2218,7 +2218,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:569
 msgid "WordPerfect document"
-msgstr "Dogfen WordPerfect"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:570
 msgid "WordPerfect/Drawperfect image"
@@ -2226,7 +2226,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:571
 msgid "X window image"
-msgstr "Delwedd ffenest X"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:572
 msgid "X-Motif UIL table"
@@ -2286,7 +2286,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:586
 msgid "XPM image"
-msgstr "Delwedd XPM"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:587
 msgid "XPS document"
@@ -2322,11 +2322,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:595
 msgid "Zip archive"
-msgstr "Archif ZIP"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:596
 msgid "Zoo archive"
-msgstr "Archif zoo"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:597
 msgid "application log"
@@ -2388,7 +2388,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:616
 msgid "compound document"
-msgstr "dogfen gyfansawdd"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:617
 msgid "compound documents"
@@ -2450,7 +2450,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:633
 msgid "email headers"
-msgstr "penawdau e-bost"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:634
 msgid "email message"
@@ -2462,11 +2462,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:636
 msgid "encrypted message"
-msgstr "Neges wedi ei hamgryptio"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:637
 msgid "enriched text document"
-msgstr "Dogfen testun wedi ei gyfoethogi"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:638
 msgid "executable"
@@ -2482,7 +2482,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:641
 msgid "help page"
-msgstr "tudalen gymorth"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:642
 msgid "iMelody ringtone"
@@ -2514,15 +2514,15 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:649
 msgid "mail delivery report"
-msgstr "Adroddiad trosgludo post"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:650
 msgid "mail disposition report"
-msgstr "adroddiad ffurf post"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:651
 msgid "mail system report"
-msgstr "adroddiad system bost"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:652
 msgid "mailbox file"
@@ -2530,7 +2530,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:653
 msgid "manual page (compressed)"
-msgstr "tudalen llawlyfr (wedi ei gywasgu)"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:654
 msgid "message catalog"
@@ -2538,11 +2538,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:655
 msgid "message digest"
-msgstr "crynodeb negeseuon"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:656
 msgid "message in several formats"
-msgstr "neges mewn sawl fformat"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:657
 msgid "mount point"
@@ -2558,7 +2558,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:660
 msgid "partial email message"
-msgstr "darn o neges e-bost"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:661
 msgid "pipe"
@@ -2575,7 +2575,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:665
 msgid "profiler results"
-msgstr "canlyniadau proffeilio"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:666
 msgid "program crash data"
@@ -2587,7 +2587,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:668
 msgid "reference to remote file"
-msgstr "cyfeiriad at ffeil bell"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:669
 msgid "rejected patch"
@@ -2599,19 +2599,19 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:671
 msgid "rich text document"
-msgstr "dogfen testun gyfoethog (rtf)"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:672
 msgid "shared library"
-msgstr "llyfrgell wedi ei rhannu"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:673
 msgid "shell archive"
-msgstr "archif plisgyn"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:674
 msgid "shell script"
-msgstr "sgript plisgyn"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:675
 msgid "shortcut to Kexi project on database server"
@@ -2619,7 +2619,7 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:676
 msgid "signed message"
-msgstr "neges lofnodwyd"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:677
 msgid "socket"
@@ -2641,11 +2641,11 @@ msgstr ""
 
 #: ../freedesktop.org.xml.in.h:683
 msgid "symbolic link"
-msgstr "cyswllt symbolaidd"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:684
 msgid "theme"
-msgstr "thema"
+msgstr ""
 
 #: ../freedesktop.org.xml.in.h:685
 msgid "translated messages (machine-readable)"

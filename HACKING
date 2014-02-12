@@ -14,8 +14,8 @@ A few ground rules for people interested in adding new mime-types.
 Translations
 ------------
 
-Translations should go through Transifex.net:
-http://www.transifex.net/projects/p/shared-mime-info/c/default/
+Translations should go through Transifex.net, and the freedesktop.org team:
+http://www.transifex.net/projects/p/shared-mime-info/
 
 git
 ---
@@ -41,7 +41,7 @@ Bugs for new mime-types should include:
 Test suite
 ----------
 
-You need to have xdgmime checked out and compile at the same level as
+You need to have xdgmime checked out [1] and compile at the same level as
 shared-mime-info. ../xdgmime/src/test-mime-data will be run against
 tests/list.
 
@@ -52,9 +52,15 @@ The expected failures is whether matching the file with the mime-type would
 fail when matched by file, data or name. "x" indicates expected failure, "o"
 indicates expected success. Trailing "o"s can be omitted.
 
+See the top of the tests/list file for syntax details.
+
+[1]: Repository details at:
+http://cgit.freedesktop.org/xdg/xdgmime/
+
 Releasing
 ---------
 
+- Run "make update-translations" and "make check-translations" before release
 - Copy the file to ~hadess/public_html on gabe.freedesktop.org
 - Update http://www.freedesktop.org/wiki/Software/shared-mime-info
 
