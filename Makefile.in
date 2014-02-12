@@ -40,15 +40,14 @@ subdir = .
 DIST_COMMON = README $(am__configure_deps) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in $(srcdir)/config.h.in \
 	$(srcdir)/shared-mime-info.pc.in $(top_srcdir)/configure \
-	COPYING ChangeLog NEWS depcomp install-sh missing \
-	mkinstalldirs
+	COPYING ChangeLog NEWS depcomp install-sh missing
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.in
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
  configure.lineno config.status.lineno
-mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
+mkinstalldirs = $(install_sh) -d
 CONFIG_HEADER = config.h
 CONFIG_CLEAN_FILES = shared-mime-info.pc
 CONFIG_CLEAN_VPATH_FILES =
@@ -80,10 +79,25 @@ DEFAULT_INCLUDES = -I.@am__isrc@
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
 am__mv = mv -f
+AM_V_lt = $(am__v_lt_$(V))
+am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))
+am__v_lt_0 = --silent
 COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
 	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+AM_V_CC = $(am__v_CC_$(V))
+am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))
+am__v_CC_0 = @echo "  CC    " $@;
+AM_V_at = $(am__v_at_$(V))
+am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))
+am__v_at_0 = @
 CCLD = $(CC)
 LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
+AM_V_CCLD = $(am__v_CCLD_$(V))
+am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))
+am__v_CCLD_0 = @echo "  CCLD  " $@;
+AM_V_GEN = $(am__v_GEN_$(V))
+am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))
+am__v_GEN_0 = @echo "  GEN   " $@;
 SOURCES = $(test_subclassing_SOURCES) $(test_tree_magic_SOURCES) \
 	$(update_mime_database_SOURCES)
 DIST_SOURCES = $(test_subclassing_SOURCES) \
@@ -162,7 +176,7 @@ am__relativize = \
   done; \
   reldir="$$dir2"
 GZIP_ENV = --best
-DIST_ARCHIVES = $(distdir).tar.bz2
+DIST_ARCHIVES = $(distdir).tar.xz
 distuninstallcheck_listfiles = find . -type f -print
 distcleancheck_listfiles = find . -type f -print
 ACLOCAL = @ACLOCAL@
@@ -170,6 +184,7 @@ ALL_CFLAGS = @ALL_CFLAGS@
 ALL_LIBS = @ALL_LIBS@
 ALL_LINGUAS = @ALL_LINGUAS@
 AMTAR = @AMTAR@
+AM_DEFAULT_VERBOSITY = @AM_DEFAULT_VERBOSITY@
 AUTOCONF = @AUTOCONF@
 AUTOHEADER = @AUTOHEADER@
 AUTOMAKE = @AUTOMAKE@
@@ -223,9 +238,12 @@ PACKAGE_BUGREPORT = @PACKAGE_BUGREPORT@
 PACKAGE_NAME = @PACKAGE_NAME@
 PACKAGE_STRING = @PACKAGE_STRING@
 PACKAGE_TARNAME = @PACKAGE_TARNAME@
+PACKAGE_URL = @PACKAGE_URL@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
 PKG_CONFIG = @PKG_CONFIG@
+PKG_CONFIG_LIBDIR = @PKG_CONFIG_LIBDIR@
+PKG_CONFIG_PATH = @PKG_CONFIG_PATH@
 POFILES = @POFILES@
 POSUB = @POSUB@
 PO_IN_DATADIR_FALSE = @PO_IN_DATADIR_FALSE@
@@ -408,13 +426,13 @@ clean-noinstPROGRAMS:
 	-test -z "$(noinst_PROGRAMS)" || rm -f $(noinst_PROGRAMS)
 test-subclassing$(EXEEXT): $(test_subclassing_OBJECTS) $(test_subclassing_DEPENDENCIES) 
 	@rm -f test-subclassing$(EXEEXT)
-	$(test_subclassing_LINK) $(test_subclassing_OBJECTS) $(test_subclassing_LDADD) $(LIBS)
+	$(AM_V_CCLD)$(test_subclassing_LINK) $(test_subclassing_OBJECTS) $(test_subclassing_LDADD) $(LIBS)
 test-tree-magic$(EXEEXT): $(test_tree_magic_OBJECTS) $(test_tree_magic_DEPENDENCIES) 
 	@rm -f test-tree-magic$(EXEEXT)
-	$(test_tree_magic_LINK) $(test_tree_magic_OBJECTS) $(test_tree_magic_LDADD) $(LIBS)
+	$(AM_V_CCLD)$(test_tree_magic_LINK) $(test_tree_magic_OBJECTS) $(test_tree_magic_LDADD) $(LIBS)
 update-mime-database$(EXEEXT): $(update_mime_database_OBJECTS) $(update_mime_database_DEPENDENCIES) 
 	@rm -f update-mime-database$(EXEEXT)
-	$(update_mime_database_LINK) $(update_mime_database_OBJECTS) $(update_mime_database_LDADD) $(LIBS)
+	$(AM_V_CCLD)$(update_mime_database_LINK) $(update_mime_database_OBJECTS) $(update_mime_database_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -427,57 +445,65 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/update_mime_database-update-mime-database.Po@am__quote@
 
 .c.o:
-@am__fastdepCC_TRUE@	$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
-@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+@am__fastdepCC_FALSE@	$(AM_V_CC) @AM_BACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(COMPILE) -c $<
 
 .c.obj:
-@am__fastdepCC_TRUE@	$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ `$(CYGPATH_W) '$<'`
-@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ `$(CYGPATH_W) '$<'`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/$*.Tpo $(DEPDIR)/$*.Po
+@am__fastdepCC_FALSE@	$(AM_V_CC) @AM_BACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	source='$<' object='$@' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(COMPILE) -c `$(CYGPATH_W) '$<'`
 
 test_subclassing-test-subclassing.o: test-subclassing.c
-@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(test_subclassing_CFLAGS) $(CFLAGS) -MT test_subclassing-test-subclassing.o -MD -MP -MF $(DEPDIR)/test_subclassing-test-subclassing.Tpo -c -o test_subclassing-test-subclassing.o `test -f 'test-subclassing.c' || echo '$(srcdir)/'`test-subclassing.c
-@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/test_subclassing-test-subclassing.Tpo $(DEPDIR)/test_subclassing-test-subclassing.Po
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(test_subclassing_CFLAGS) $(CFLAGS) -MT test_subclassing-test-subclassing.o -MD -MP -MF $(DEPDIR)/test_subclassing-test-subclassing.Tpo -c -o test_subclassing-test-subclassing.o `test -f 'test-subclassing.c' || echo '$(srcdir)/'`test-subclassing.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/test_subclassing-test-subclassing.Tpo $(DEPDIR)/test_subclassing-test-subclassing.Po
+@am__fastdepCC_FALSE@	$(AM_V_CC) @AM_BACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	source='test-subclassing.c' object='test_subclassing-test-subclassing.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(test_subclassing_CFLAGS) $(CFLAGS) -c -o test_subclassing-test-subclassing.o `test -f 'test-subclassing.c' || echo '$(srcdir)/'`test-subclassing.c
 
 test_subclassing-test-subclassing.obj: test-subclassing.c
-@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(test_subclassing_CFLAGS) $(CFLAGS) -MT test_subclassing-test-subclassing.obj -MD -MP -MF $(DEPDIR)/test_subclassing-test-subclassing.Tpo -c -o test_subclassing-test-subclassing.obj `if test -f 'test-subclassing.c'; then $(CYGPATH_W) 'test-subclassing.c'; else $(CYGPATH_W) '$(srcdir)/test-subclassing.c'; fi`
-@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/test_subclassing-test-subclassing.Tpo $(DEPDIR)/test_subclassing-test-subclassing.Po
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(test_subclassing_CFLAGS) $(CFLAGS) -MT test_subclassing-test-subclassing.obj -MD -MP -MF $(DEPDIR)/test_subclassing-test-subclassing.Tpo -c -o test_subclassing-test-subclassing.obj `if test -f 'test-subclassing.c'; then $(CYGPATH_W) 'test-subclassing.c'; else $(CYGPATH_W) '$(srcdir)/test-subclassing.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/test_subclassing-test-subclassing.Tpo $(DEPDIR)/test_subclassing-test-subclassing.Po
+@am__fastdepCC_FALSE@	$(AM_V_CC) @AM_BACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	source='test-subclassing.c' object='test_subclassing-test-subclassing.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(test_subclassing_CFLAGS) $(CFLAGS) -c -o test_subclassing-test-subclassing.obj `if test -f 'test-subclassing.c'; then $(CYGPATH_W) 'test-subclassing.c'; else $(CYGPATH_W) '$(srcdir)/test-subclassing.c'; fi`
 
 test_tree_magic-test-tree-magic.o: test-tree-magic.c
-@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(test_tree_magic_CFLAGS) $(CFLAGS) -MT test_tree_magic-test-tree-magic.o -MD -MP -MF $(DEPDIR)/test_tree_magic-test-tree-magic.Tpo -c -o test_tree_magic-test-tree-magic.o `test -f 'test-tree-magic.c' || echo '$(srcdir)/'`test-tree-magic.c
-@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/test_tree_magic-test-tree-magic.Tpo $(DEPDIR)/test_tree_magic-test-tree-magic.Po
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(test_tree_magic_CFLAGS) $(CFLAGS) -MT test_tree_magic-test-tree-magic.o -MD -MP -MF $(DEPDIR)/test_tree_magic-test-tree-magic.Tpo -c -o test_tree_magic-test-tree-magic.o `test -f 'test-tree-magic.c' || echo '$(srcdir)/'`test-tree-magic.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/test_tree_magic-test-tree-magic.Tpo $(DEPDIR)/test_tree_magic-test-tree-magic.Po
+@am__fastdepCC_FALSE@	$(AM_V_CC) @AM_BACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	source='test-tree-magic.c' object='test_tree_magic-test-tree-magic.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(test_tree_magic_CFLAGS) $(CFLAGS) -c -o test_tree_magic-test-tree-magic.o `test -f 'test-tree-magic.c' || echo '$(srcdir)/'`test-tree-magic.c
 
 test_tree_magic-test-tree-magic.obj: test-tree-magic.c
-@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(test_tree_magic_CFLAGS) $(CFLAGS) -MT test_tree_magic-test-tree-magic.obj -MD -MP -MF $(DEPDIR)/test_tree_magic-test-tree-magic.Tpo -c -o test_tree_magic-test-tree-magic.obj `if test -f 'test-tree-magic.c'; then $(CYGPATH_W) 'test-tree-magic.c'; else $(CYGPATH_W) '$(srcdir)/test-tree-magic.c'; fi`
-@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/test_tree_magic-test-tree-magic.Tpo $(DEPDIR)/test_tree_magic-test-tree-magic.Po
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(test_tree_magic_CFLAGS) $(CFLAGS) -MT test_tree_magic-test-tree-magic.obj -MD -MP -MF $(DEPDIR)/test_tree_magic-test-tree-magic.Tpo -c -o test_tree_magic-test-tree-magic.obj `if test -f 'test-tree-magic.c'; then $(CYGPATH_W) 'test-tree-magic.c'; else $(CYGPATH_W) '$(srcdir)/test-tree-magic.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/test_tree_magic-test-tree-magic.Tpo $(DEPDIR)/test_tree_magic-test-tree-magic.Po
+@am__fastdepCC_FALSE@	$(AM_V_CC) @AM_BACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	source='test-tree-magic.c' object='test_tree_magic-test-tree-magic.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(test_tree_magic_CFLAGS) $(CFLAGS) -c -o test_tree_magic-test-tree-magic.obj `if test -f 'test-tree-magic.c'; then $(CYGPATH_W) 'test-tree-magic.c'; else $(CYGPATH_W) '$(srcdir)/test-tree-magic.c'; fi`
 
 update_mime_database-update-mime-database.o: update-mime-database.c
-@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(update_mime_database_CFLAGS) $(CFLAGS) -MT update_mime_database-update-mime-database.o -MD -MP -MF $(DEPDIR)/update_mime_database-update-mime-database.Tpo -c -o update_mime_database-update-mime-database.o `test -f 'update-mime-database.c' || echo '$(srcdir)/'`update-mime-database.c
-@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/update_mime_database-update-mime-database.Tpo $(DEPDIR)/update_mime_database-update-mime-database.Po
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(update_mime_database_CFLAGS) $(CFLAGS) -MT update_mime_database-update-mime-database.o -MD -MP -MF $(DEPDIR)/update_mime_database-update-mime-database.Tpo -c -o update_mime_database-update-mime-database.o `test -f 'update-mime-database.c' || echo '$(srcdir)/'`update-mime-database.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/update_mime_database-update-mime-database.Tpo $(DEPDIR)/update_mime_database-update-mime-database.Po
+@am__fastdepCC_FALSE@	$(AM_V_CC) @AM_BACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	source='update-mime-database.c' object='update_mime_database-update-mime-database.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(update_mime_database_CFLAGS) $(CFLAGS) -c -o update_mime_database-update-mime-database.o `test -f 'update-mime-database.c' || echo '$(srcdir)/'`update-mime-database.c
 
 update_mime_database-update-mime-database.obj: update-mime-database.c
-@am__fastdepCC_TRUE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(update_mime_database_CFLAGS) $(CFLAGS) -MT update_mime_database-update-mime-database.obj -MD -MP -MF $(DEPDIR)/update_mime_database-update-mime-database.Tpo -c -o update_mime_database-update-mime-database.obj `if test -f 'update-mime-database.c'; then $(CYGPATH_W) 'update-mime-database.c'; else $(CYGPATH_W) '$(srcdir)/update-mime-database.c'; fi`
-@am__fastdepCC_TRUE@	$(am__mv) $(DEPDIR)/update_mime_database-update-mime-database.Tpo $(DEPDIR)/update_mime_database-update-mime-database.Po
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(update_mime_database_CFLAGS) $(CFLAGS) -MT update_mime_database-update-mime-database.obj -MD -MP -MF $(DEPDIR)/update_mime_database-update-mime-database.Tpo -c -o update_mime_database-update-mime-database.obj `if test -f 'update-mime-database.c'; then $(CYGPATH_W) 'update-mime-database.c'; else $(CYGPATH_W) '$(srcdir)/update-mime-database.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/update_mime_database-update-mime-database.Tpo $(DEPDIR)/update_mime_database-update-mime-database.Po
+@am__fastdepCC_FALSE@	$(AM_V_CC) @AM_BACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	source='update-mime-database.c' object='update_mime_database-update-mime-database.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(update_mime_database_CFLAGS) $(CFLAGS) -c -o update_mime_database-update-mime-database.obj `if test -f 'update-mime-database.c'; then $(CYGPATH_W) 'update-mime-database.c'; else $(CYGPATH_W) '$(srcdir)/update-mime-database.c'; fi`
@@ -784,6 +810,7 @@ distdir: $(DISTFILES)
 dist-gzip: distdir
 	tardir=$(distdir) && $(am__tar) | GZIP=$(GZIP_ENV) gzip -c >$(distdir).tar.gz
 	$(am__remove_distdir)
+
 dist-bzip2: distdir
 	tardir=$(distdir) && $(am__tar) | bzip2 -9 -c >$(distdir).tar.bz2
 	$(am__remove_distdir)
@@ -791,7 +818,6 @@ dist-bzip2: distdir
 dist-lzma: distdir
 	tardir=$(distdir) && $(am__tar) | lzma -9 -c >$(distdir).tar.lzma
 	$(am__remove_distdir)
-
 dist-xz: distdir
 	tardir=$(distdir) && $(am__tar) | xz -c >$(distdir).tar.xz
 	$(am__remove_distdir)
@@ -810,7 +836,7 @@ dist-zip: distdir
 	$(am__remove_distdir)
 
 dist dist-all: distdir
-	tardir=$(distdir) && $(am__tar) | bzip2 -9 -c >$(distdir).tar.bz2
+	tardir=$(distdir) && $(am__tar) | xz -c >$(distdir).tar.xz
 	$(am__remove_distdir)
 
 # This target untars the dist file and tries a VPATH configuration.  Then
@@ -1032,7 +1058,7 @@ $(pkgconfig_DATA): config.status
 @INTLTOOL_XML_RULE@
 @INTLTOOL_DESKTOP_RULE@
 
-install-data-hook: 
+install-data-hook: install-binPROGRAMS
 @ENABLE_UPDATE_MIMEDB_TRUE@	$(DESTDIR)"$(bindir)/update-mime-database" -V "$(DESTDIR)$(datadir)/mime"
 
 uninstall-hook:
@@ -1050,23 +1076,27 @@ uninstall-hook:
 	rm -f "$(DESTDIR)$(datadir)/mime/globs2"
 	rm -f "$(DESTDIR)$(datadir)/mime/treemagic"
 	rm -f "$(DESTDIR)$(datadir)/mime/types"
+	rm -f "$(DESTDIR)$(datadir)/mime/version"
 
-all: check
-	$(MAKE) -C po shared-mime-info.pot
+all: check create-pot
 
-check: freedesktop.org.xml check-translations
-	if test -n $(XMLLINT) ; then \
-		if test -e $(top_builddir)/freedesktop.org.xml; then \
-		xmllint --noout --valid $(top_builddir)/freedesktop.org.xml;	\
-		else \
-		xmllint --noout --valid $(top_srcdir)/freedesktop.org.xml;	\
-		fi \
+create-pot:
+	$(AM_V_GEN) $(MAKE) -C po shared-mime-info.pot
+
+check: create-pot freedesktop.org.xml update-mime-database check-translations
+	if test -e $(top_builddir)/freedesktop.org.xml; then \
+		xmllint --noout --valid $(top_builddir)/freedesktop.org.xml || exit 1;	\
+	else \
+		xmllint --noout --valid $(top_srcdir)/freedesktop.org.xml || exit 1;	\
+	fi; \
+	if test -d .git/ && test -x $(top_builddir)/update-mime-database && test -d $(top_srcdir)/mime-db-tests ; then \
+		$(top_builddir)/update-mime-database mime-db-tests/ ; \
 	fi
 	if test -d .git/ && test -x ../xdgmime/src/test-mime-data && test -x $(top_builddir)/test-tree-magic ; then \
 		mkdir -p $(top_builddir)/temp-mime-dir/mime/packages ; \
 		cp -a $(top_builddir)/freedesktop.org.xml $(top_builddir)/temp-mime-dir/mime/packages/ ; \
 		XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/update-mime-database "$(top_builddir)/temp-mime-dir/mime/" ; \
-		XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" ../xdgmime/src/test-mime-data -v tests/list || (XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" ../xdgmime/src/test-mime-data -v -v tests/list ; exit 1); \
+		XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" XDG_DATA_HOME="$(top_builddir)/temp-mime-dir/" ../xdgmime/src/test-mime-data -v tests/list || (XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" ../xdgmime/src/test-mime-data -v -v tests/list ; exit 1); \
 		XDG_DATA_DIRS="$(top_builddir)/temp-mime-dir/" $(top_builddir)/test-tree-magic tests/tree-list || exit 1; \
 		rm -rf "$(top_builddir)/temp-mime-dir/" ; \
 	fi
@@ -1086,6 +1116,10 @@ check-translations:
 			exit 1;										\
 		fi;											\
 	done;
+
+update-translations: create-pot
+	@tx pull --all --force --skip
+	@tx push --source
 
 # Build ChangeLog from GIT history
 ChangeLog:

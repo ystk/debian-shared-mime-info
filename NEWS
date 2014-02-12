@@ -1,3 +1,116 @@
+shared-mime-info 1.0 (2012-01-17)
+* Mime-type changes:
+- Add root-XML for AbiWord, Atom, Dia, Dia shape,
+  KML, RDF, XSL FO, metalink, XMI, SMIL
+- Add glob for VDR recordings
+- Make PBM/PPM detection more permissive
+- Fix magic for MP3 files without ID3
+- Add application/vnd.visio mimetype
+- Fix Amazon MP3 being detected as Qt Designer
+- Add application/acrobat alias for PDF files
+- Add support for detecting DVDs without VIDEO_TS dirs
+
+* Test suite adjustments for xdgmime bug fixes
+
+
+shared-mime-info 0.91 (2011-09-18)
+* Mime-type Changes:
+- Add WWF
+- Add application/vnd.android.package-archive.
+- Add root-XML for SVG
+- Add Qt QML
+- Add application/x-fictionbook
+- Add application/x-mobipocket-ebook
+- Add another alias for ASX playlists
+- Add video/3gp, video/x-mpeg, video/x-mpeg2,
+  video/divx, and video/msvideo aliases
+- Add MSOffice 12 and OOXML mime-types
+- Add video/vnd.mpegurl
+- Java class tweaks
+- Add magic for Megadrive ROMs
+- Add application/vnd.tcpdump.pcap
+- Fix root-XML for XSL
+- Add extension for Scheme text files
+- Add extensions for VRML documents
+- Loosen magic for FLTK fluid files
+- Move application/x-reject to text/x-reject
+- Add application/x-nzb
+- Remove glob from text/x-uri
+- Added a *.wsgi pattern for python scripts
+- Add DVI, PKCS, RELAX NG, and S/MIME acronyms.
+- Use text/vcard instead of deprecated text/directory for vCards.
+- Add text/x-markdown
+- Add WebVTT
+- Add *.php5 and *.phps as patterns for PHP
+- Make dash scripts shell scripts
+- Add application/x-iso9660-image alias for application/x-cd-image
+- Add text/x-scala mime type
+- Add another magic for XSPF files
+- Update CHM mime-type to application/vnd.ms-htmlhelp
+
+* Other:
+- Fix parallel build
+- Update GPLv2 COPYING file
+- Use XZ tarballs by default
+
+shared-mime-info 0.90 (2010-12-1)
+* Mime-type Changes:
+- Make application/epub+zip sub-class-of application/zip
+- Make sure RAM files are not all treated as text
+- Make CMakefiles a sub-class of text/plain
+- Add new mime-type for Panasonic RW2 images
+- Add XSL magic
+- Add root-XML for XSL
+- Add *.gem as a glob for tar archives
+- Add test case for text/directory files
+- Add go source code
+- Add pdf.xz mime-type
+- Add text/x-ooc source code
+- Add Cobol source code
+
+* Other:
+- Don't error out on the x-scheme-handler/* mime-types
+- Fix crasher when mime-magic is empty
+
+shared-mime-info 0.80 (2010-09-30)
+* Mime-type Changes:
+- Add magic for F4V (Flash) video files
+- Add mime-type for Dia shapes
+- Bump priority for KOffice magics to give them precedence over gzip and zip
+- Add mime-type for Verilog and SystemVerilog source files and headers
+- Add Qt Linguist translation file
+- Add application/x-xspf+xml alias for XSPF playlists
+- Use audio/flac for FLAC files, make audio/x-flac an alias of it
+- Add mime-type for HDF files
+- Add mime-type for Mozilla Extension packages
+- Add mime-type for text/cache-manifest
+- Add YAML mime-type
+- Add application/relax-ng-compact-syntax mime-type
+- Add more tests for Matlab and Octave files
+- Improve translator comments for VCD, SVCD and PictureCD
+- Add application/pkcs8 mime-type
+- Add audio and video WebM mime-types
+- Add video/mp2t mime-type
+- Use generic video icon for application/x-matroska
+- Improve magic for Matroska files
+- Add magic for audio/x-stm
+- Update magic for Apple HTTP Streaming playlists
+- Add Lrzip archive mime-type
+- Fix PDF detection for some pesky files
+- Add details about 3GPP and 3GPP2 files
+- Add JavaFX video format
+- Add Windows Imaging Format Disk Image mime-type
+- Add application/x-apple-diskimage mime-type
+- Add e-book reader content-type
+- Add application/x-tex as an alias for text/x-tex
+- Use application/oxps mime-type for XPS files
+- Add magic to BibTeX files
+
+* Other:
+- Fix malformed D source test
+- Avoid using ~/.local data when running the test suite
+- Make sure that update-mime-info doesn't get called before installed
+
 shared-mime-info 0.71 (2010-02-01)
 * Mime-type Changes:
 - Add magic for FLAC files
@@ -25,7 +138,7 @@ shared-mime-info 0.70 (2009-09-06)
 * Mime-type Changes:
 - Add MXF video
 - Add Google Earth XML files
-- Add XZ arcgives
+- Add XZ archives
 - Add SPSS formats
 - Add OpenRaster images
 - Add glob for OpenType fonts

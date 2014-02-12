@@ -1,8 +1,7 @@
 Source: shared-mime-info
 Section: misc
 Priority: optional
-Maintainer: Filip Van Raemdonck <mechanix@debian.org>
-Uploaders: Sebastian Dröge <slomo@debian.org>
+Maintainer: Sebastian Dröge <slomo@debian.org>
 Build-Depends: cdbs (>= 0.4.35),
                debhelper (>= 7),
                autotools-dev,
@@ -13,6 +12,7 @@ Build-Depends: cdbs (>= 0.4.35),
                intltool (>= 0.35),
                libxml2-utils
 Standards-Version: 3.8.4
+Homepage: http://freedesktop.org/wiki/Software/shared-mime-info
 
 Package: shared-mime-info
 Architecture: any
@@ -21,6 +21,7 @@ Depends: ${misc:Depends},
 Conflicts: libglib2.0-0 (<< 2.17.2),
            tracker (<< 0.6.90),
            libgnomevfs2-0 (<< 1:2.24.0)
+Multi-Arch: foreign
 Description: FreeDesktop.org shared MIME database and spec
  This is the shared MIME-info database from the X Desktop Group. It is required
  by any program complying to the Shared MIME-Info Database spec, which is also

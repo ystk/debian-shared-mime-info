@@ -1,10 +1,60 @@
-shared-mime-info (0.71-4) unstable; urgency=medium
+shared-mime-info (1.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * ACK NMU 0.90-1.1.
+  * debian/patches/:
+    + Refresh to apply cleanly again.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 07 Jun 2012 18:01:14 +0200
+
+shared-mime-info (0.90-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Support multi-arch:
+    - Mark shared-mime-info as foreign. (closes: #616645)
+
+ -- Bastian Blank <waldi@debian.org>  Fri, 11 May 2012 13:51:00 +0000
+
+shared-mime-info (0.90-1) unstable; urgency=low
+
+  * New upstream release.
+  * Upload to unstable.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 14 Feb 2011 17:10:23 +0100
+
+shared-mime-info (0.80-2) experimental; urgency=low
 
   * debian/postrm:
     + Fix purging of the package. Thanks to Andreas Metzler for
       the patch (Closes: #602626).
 
- -- Sebastian Dröge <slomo@debian.org>  Fri, 12 Nov 2010 09:06:59 +0100
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 12 Nov 2010 08:58:13 +0100
+
+shared-mime-info (0.80-1) experimental; urgency=low
+
+  [ Timur Birsh ]
+  * New upstream release (Closes: #601559):
+    + Fixes printing of newlines after warnings (Closes: #592201).
+    + Uses correct mimetype for rar archives (Closes: #575187).
+    + debian/patches/152_qt-designer.patch,
+      debian/patches/153_mpegts.patch,
+      debian/patches/156_mkv-webm-magic.patch:
+      - Dropped, merged upstream.
+
+  [ Sebastian Dröge ]
+  * debian/patches/151_webm.patch,
+    debian/patches/154_ogg-mkv-webm-media-icons.patch,
+    debian/patches/155_audio-webm.patch:
+    + Dropped, merged upstream too.
+  * debian/control:
+    + Remove Filip Van Raemdonck as maintainer, he didn't work
+      on this package for a long time. Thanks for all the work
+      in the past Filip (Closes: #503538).
+    + Add Homepage field (Closes: #595678).
+  * debian/patches/*:
+    + Refresh all patches.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 03 Nov 2010 14:50:47 +0100
 
 shared-mime-info (0.71-3) unstable; urgency=low
 

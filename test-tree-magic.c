@@ -13,8 +13,8 @@
  *
  * You should have received a copy of the GNU Lesser General
  * Public License along with this library; if not, write to the
- * Free Software Foundation, Inc., 59 Temple Place, Suite 330,
- * Boston, MA 02111-1307, USA.
+ * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+ * Boston, MA 02110-1301 USA
  *
  * Author: Matthias Clasen <mclasen@redhat.com>
  */
@@ -167,6 +167,8 @@ insert_matchlet (TreeMatch    *match,
 		 TreeMatchlet *matchlet, 
 		 gint          depth)
 {
+	g_return_if_fail (match != NULL);
+
 	if (depth == 0) 
 		match->matches = g_list_append (match->matches, matchlet);
 	else {
@@ -209,6 +211,7 @@ read_tree_magic_from_directory (const gchar *prefix)
 	gint depth;
 
 	filename = g_build_filename (prefix, "mime", "treemagic", NULL);
+	match = NULL;
 
 	if (g_file_get_contents (filename, &text, &len, NULL)) {
 		if (strcmp (text, "MIME-TreeMagic") == 0) {

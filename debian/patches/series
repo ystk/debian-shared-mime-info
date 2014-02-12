@@ -2,10 +2,4 @@
 060_pdf_priority.patch
 061_tex-matlab.patch
 150_mps-mime.patch
-151_webm.patch
-152_qt-designer.patch
-153_mpegts.patch
-154_ogg-mkv-webm-media-icons.patch
-155_audio-webm.patch
-156_mkv-webm-magic.patch
 158_no_directory_alias.patch
