@@ -1,8 +1,6 @@
-Index: shared-mime-info-1.0/freedesktop.org.xml.in
-===================================================================
---- shared-mime-info-1.0.orig/freedesktop.org.xml.in	2012-06-07 18:04:34.395226725 +0200
-+++ shared-mime-info-1.0/freedesktop.org.xml.in	2012-06-07 18:04:45.343226892 +0200
-@@ -5250,7 +5250,13 @@
+--- a/freedesktop.org.xml.in
++++ b/freedesktop.org.xml.in
+@@ -5527,7 +5527,13 @@
        <match type="string" value="%" offset="0"/>
      </magic>
      <magic priority="50">

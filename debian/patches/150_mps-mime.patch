@@ -1,8 +1,6 @@
-Index: shared-mime-info-1.0/freedesktop.org.xml.in
-===================================================================
---- shared-mime-info-1.0.orig/freedesktop.org.xml.in	2012-06-07 18:04:35.079226738 +0200
-+++ shared-mime-info-1.0/freedesktop.org.xml.in	2012-06-07 18:04:44.747226884 +0200
-@@ -2787,6 +2787,10 @@
+--- a/freedesktop.org.xml.in
++++ b/freedesktop.org.xml.in
+@@ -2912,6 +2912,10 @@
      </magic>
      <glob pattern="*.psw"/>
    </mime-type>

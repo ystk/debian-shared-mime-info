@@ -2,6 +2,7 @@ Source: shared-mime-info
 Section: misc
 Priority: optional
 Maintainer: Sebastian Dröge <slomo@debian.org>
+Uploaders: Emilio Pozuelo Monfort <pochu@debian.org>
 Build-Depends: cdbs (>= 0.4.35),
                debhelper (>= 7),
                autotools-dev,
@@ -11,7 +12,9 @@ Build-Depends: cdbs (>= 0.4.35),
                libxml2-dev (>= 2.4),
                intltool (>= 0.35),
                libxml2-utils
-Standards-Version: 3.8.4
+Standards-Version: 3.9.5
+Vcs-Svn: svn://anonscm.debian.org/pkg-freedesktop/trunk/shared-mime-info
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-freedesktop/trunk/shared-mime-info/
 Homepage: http://freedesktop.org/wiki/Software/shared-mime-info
 
 Package: shared-mime-info
